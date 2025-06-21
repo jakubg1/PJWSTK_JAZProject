@@ -16,7 +16,7 @@ public class Query {
     private String currency;
     private LocalDate startDate;
     private LocalDate endDate;
-    private double rate;
+    private double averageRate;
     private LocalDateTime queryTime;
 
     public int getId() {
@@ -51,12 +51,12 @@ public class Query {
         this.endDate = endDate;
     }
 
-    public double getRate() {
-        return rate;
+    public double getAverageRate() {
+        return averageRate;
     }
 
-    public void setRate(double rate) {
-        this.rate = rate;
+    public void setAverageRate(double rate) {
+        this.averageRate = rate;
     }
 
     public LocalDateTime getQueryTime() {

@@ -31,7 +31,7 @@ public class QueryService {
         query.setEndDate(to);
         query.setCurrency(currency);
         query.setQueryTime(LocalDateTime.now());
-        query.setRate(getRate(from, to, currency));
+        query.setAverageRate(getRate(from, to, currency));
         queryRepository.save(query);
         return query;
     }
@@ -46,10 +46,10 @@ public class QueryService {
         if (rates.isEmpty()) {
             throw new NoRatesFoundException();
         }
-        double result = 0;
+        double averageRate = 0;
         for (Rate rate : rates) {
-            result += rate.getMid();
+            averageRate += rate.getMid();
         }
-        return result / rates.size();
+        return averageRate / rates.size();
     }
 }

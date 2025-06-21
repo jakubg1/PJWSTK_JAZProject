@@ -3,7 +3,7 @@ spring:
     name: "jaz-s32362-nbp"
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
   datasource:
     url: jdbc:mysql://szuflandia.pjwstk.edu.pl/s32362
     username: s32362
