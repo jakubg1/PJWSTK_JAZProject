@@ -4,9 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import pl.pja.jaz_s32362_nbp.Currency;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -15,10 +13,10 @@ public class Query {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private Currency currency;
+    private String currency;
     private LocalDate startDate;
     private LocalDate endDate;
-    private BigDecimal rate;
+    private double rate;
     private LocalDateTime queryTime;
 
     public int getId() {
@@ -29,11 +27,11 @@ public class Query {
         this.id = id;
     }
 
-    public Currency getCurrency() {
+    public String getCurrency() {
         return currency;
     }
 
-    public void setCurrency(Currency currency) {
+    public void setCurrency(String currency) {
         this.currency = currency;
     }
 
@@ -53,11 +51,11 @@ public class Query {
         this.endDate = endDate;
     }
 
-    public BigDecimal getRate() {
+    public double getRate() {
         return rate;
     }
 
-    public void setRate(BigDecimal rate) {
+    public void setRate(double rate) {
         this.rate = rate;
     }
 
