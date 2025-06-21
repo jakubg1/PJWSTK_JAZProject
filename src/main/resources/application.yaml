@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: "jaz-s32362-nbp"
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://szuflandia.pjwstk.edu.pl/s32362
+    username: s32362
+    password: Jak.Gron
+server:
+  port: 8080
