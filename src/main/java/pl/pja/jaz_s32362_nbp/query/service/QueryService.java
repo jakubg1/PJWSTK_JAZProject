@@ -1,6 +1,9 @@
-package pl.pja.jaz_s32362_nbp;
+package pl.pja.jaz_s32362_nbp.query.service;
 
 import org.springframework.stereotype.Service;
+import pl.pja.jaz_s32362_nbp.Currency;
+import pl.pja.jaz_s32362_nbp.query.model.Query;
+import pl.pja.jaz_s32362_nbp.query.repository.QueryRepository;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

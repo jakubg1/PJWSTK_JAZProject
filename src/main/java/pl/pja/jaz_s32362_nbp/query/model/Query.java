@@ -1,9 +1,10 @@
-package pl.pja.jaz_s32362_nbp;
+package pl.pja.jaz_s32362_nbp.query.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import pl.pja.jaz_s32362_nbp.Currency;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
